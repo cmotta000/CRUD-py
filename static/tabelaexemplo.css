@@ -1,0 +1,13 @@
+able {
+    /* Define uma borda sólida de 2px na cor azul */
+    border: 2px solid blue;
+
+    /* Faz as bordas da tabela e das células se unirem.
+       Isso ajuda a evitar o efeito de "grade" indesejado. */
+    border-collapse: collapse;
+}
+
+/* Remove a borda das células de cabeçalho e de dados */
+th, td {
+    border: none;
+}
