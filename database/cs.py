@@ -1,7 +1,13 @@
 from flask import Flask, render_template
+from urls.adm.setor import bp_setor
+from urls.adm.servico import bp_serv
 
 
 app = Flask(__name__)
+
+
+app.register_blueprint(bp_setor)
+app.register_blueprint(bp_serv)
 
 
 
@@ -35,4 +41,4 @@ def menu_sol():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=True, port=5000)
