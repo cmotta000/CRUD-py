@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-from database.urls.adm.setor import bp_setor
-from database.urls.adm.servico import bp_serv
+from urls.adm.setor import bp_setor
+from urls.adm.servico import bp_serv
 
 
 app = Flask(__name__)
